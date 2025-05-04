@@ -1,0 +1,37 @@
+name: barenews
+description: "A privacy-first news app. No tracking. Just the news."
+publish_to: 'none'
+
+version: 1.0.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.3.0
+  flutter_inappwebview: ^6.1.5
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.5.3
+  flutter_dotenv: ^5.2.1
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.1
+  share_plus: ^11.0.0
+  flutter_launcher_icons: ^0.14.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/barenews_icon.png"
+  remove_alpha_ios: true
